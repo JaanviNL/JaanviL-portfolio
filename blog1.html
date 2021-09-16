@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction To CSS Box Model</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-head">JaanviL</div>
+        <ul>
+            <li class="inline-list"><a class="link" href = "/index.html">home</a></li>
+            <li class="inline-list"><a class="link" href = "/projects.html">projects</a></li>
+            <li class="inline-list"><a class="link link-active" href = "/blogs.html">blogs</a></li>
+        </ul>
+    </nav>
+    <h1>Introuction to CSS Box Model</h1>
+    <img src="/sc/box model.png" class="intro-img">
+    <p>CSS , stands for Cascading Style Sheet. It is used to provide styling to web pages, so that our web page is presentable to users. A Web page generally consists of 3 main section – HTML, CSS and javascript. HTML which provides the content on web page , CSS to style the HTML elements and Javascript to to process and store the data from HTML document.</p>
+    <p>Many developers and newbies use CSS concepts without having a sound knowledge of how they really work, they use the concepts to solve the problem through trial and error method , rather than learning  the basics. It is similar to the more you practice the more you learn. But there are some concepts that should be known to the developer for better layout and positioning of HTML Elements.  One such concept is CSS Box model.<br><br>
+    Today we will learn how to use CSS box model. So Let’s start.
+        </p>
+        <p>According to CSS Box model , Every element on a web page is represented as a rectangular box.
+            Each box is composed of 4 sections – the content section, the padding section , the border section and the margin section
+            The following image will help you to understand the Box model.<br><br>
+            <img src="/sc/box.jpg" class="p-img"><br><br>
+            In the above image,<br>
+<strong>Content</strong> – is the actual content of element which can be a image , a text or a video .<br>
+<strong>Padding</strong> – the area around the content. It is transparent.<br>
+<strong>Border</strong> – the area around the content and padding. It can be transparent or visible.<br>
+<strong>Margin</strong> – the area which holds the entire content with padding and margin . It is usually transparent.<br><br>
+Now let us understand each section separately with examples.
+
+            </p>
+            <h2>The Content</h2>
+            <p>
+                This part holds the actual content which can be anything – a heading or a paragraph , a image or media content or a combination of all.
+Its Dimensions are specified by content-width and content-height. 
+Let us see a example
+Below image shows the content on web page
+<br>
+<img src="/sc/1.png" class="p-img1"><br>
+In the above image there is web page with 3 containers and these containers are positioned back-to-back . the spacing between them is browser-default spacing .
+Now lets add the border around each container.
+
+            </p>
+<h2>The Border</h2>
+<p>The following code will add border around the container whose width will be 3px and will be black in color<br><br>
+<img src="/sc/2.png" class="p-img"><br><br>
+This is how our web-page will appear.<br><br>
+<img src="/sc/3.png" class="p-img1"><br><br>
+In the above picture it can be clearly seen the containers border are overlapping with each other. So there must be spacing between them . This is when margin property comes in picture.
+</p>
+<h2>The Margin</h2>
+<p>
+    Margin is basically an area outside the border of content, which is used to separate the elements on web page.
+Now lets add the margin and see the changes.<br><br>
+<img src="/sc/4.png" class="p-img">
+<br><br>
+The above code will add margin to containers.
+<br><br>
+<img src="/sc/margn.png" class="p-img1"><br><br>
+See, as soon as we add margin around containers, they do not overlap any more. We added margin a 15px so that the containers don’t overlap , but we can see that there is space added on the right  of container as well as on left of container and also to the top of container. This means that this margin property is applied to all sides of containers and this generalized syntax for margin.
+There are also more property of margin i.e <br><i>margin-top</i>: which adds on top of container,<br>
+<i>margin-bottom</i>: adds space to bottom of container,<br>
+<i>margin-left</i>: adds space to left of container,<br>
+<i>margin-right</i>: adds space to right of container.<br>
+<i>margin</i>: creates room on all sides of container,<br> which we have seen in above image.
+We can also write margin property as<br>
+<i>margin: 10px 15px 15px 10px;</i>
+ <br>
+which means margin: top right bottom left<br>
+we can add margin on all sides with different values, whereas<br>
+<i>margin:10px;</i>
+<br>
+this will set value of 10px on all sides of border.
+</p>
+<h2>The Padding</h2>
+<p>
+    In the above image, there is  no spacing between the text and border and appearance wise this is not looking presentable, so here is where padding comes in picture.
+    Padding is the area between the content and border.<br><br> <img src="/sc/5.png" class="p-img"><br><br>
+    As soon as we add padding property, the changes can be seen below<br><br>
+    <img src="/sc/6.png" class="p-img1"><br><br>
+    See , after adding padding property ,a space as been created between the content and the border, also the size of container has increased which means padding property is similar to margin where area is added to all sides between border and content. It also has property like <i>padding-top</i> ,<i>padding-bottom</i>, <i>padding-left</i> and <i>padding-right</i>.
+    <br><br>
+    <img src="/sc/8.png" class="p-img1"><br><br>
+    In the above image , there is padding only on the left side of content. 
+This way we can customize look of elements on web Page.
+<br><br>
+
+So this is it with CSS box model, there are many more properties which can be learn as you go on practicing .This is it with basic concept of Box Model.
+    
+
+</p>
+<nav class="navigation">
+    <div class="nav-footer">
+        <ul>
+            <li class="inline-list"><a  class="link " href = "https://www.linkedin.com/feed/">LinkedIn</a></li>
+            
+            <li class="inline-list"><a class= "link" href = "https://github.com/JaanviNL">Github</a></li>
+        </ul>
+</div>
+</nav>
+</body>
+</html>
